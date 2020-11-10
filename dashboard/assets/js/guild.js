@@ -7,14 +7,6 @@ function setModule(name) {
   $('.module').hide();
   $(`#${name}Module`).show();
   $(`#${name}`).addClass('active');
-<<<<<<< HEAD
-
-  const newURL = `${window.location.protocol}//${window.location.host}${window.location.pathname}?module=${name}`;
-  window.history.pushState({ path: newURL }, '', newURL);
-}
-
-setModule(module || 'overview');
-=======
 }
 
 $('input').on('input', function() {
@@ -27,4 +19,3 @@ $('input').on('input', function() {
 });
 
 setModule('overview');
->>>>>>> 27d66cce7102f93d5181ee8bf4521f4a7431ba34

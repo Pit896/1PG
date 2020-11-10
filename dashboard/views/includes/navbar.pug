@@ -14,16 +14,10 @@ nav.navbar.navbar-expand-lg.navbar-light
             img.user-avatar.round(src=user.avatarUrl(32))
             span.pl-2 #{user.username}
           .dropdown-menu.dropdown-menu-right
-<<<<<<< HEAD
-            a.dropdown-item(href='/dashboard') #[i.fas.fa-cogs.text-muted.pl-1] Dashboard
-            hr
-            a.dropdown-item(href='/logout') #[i.fas.fa-user-slash.text-muted.pl-1] Logout
-=======
             a.dropdown-item(href='/dashboard') #[i.fas.fa-cogs.text-muted] Dashboard
             hr
             a.dropdown-item(href='/logout') #[i.fas.fa-user-slash.text-muted] Logout
->>>>>>> 27d66cce7102f93d5181ee8bf4521f4a7431ba34
       else
-        a.nav-link(href='/login')
+        a.nav-link(href='/login') 
           i.fas.fa-sign-in-alt
           span.pl-1 Login

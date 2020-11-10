@@ -25,10 +25,6 @@ async function handleCommand(msg) {
   if (!msg.content.startsWith(prefix))
     return false;
 
-  const blacklisted = savedGuild.general.blacklistedChannelIds
-    .includes(msg.channel.id);
-  if (blacklisted) return false;
-
   const name = msg.content
     .split(' ')[0]
     .slice(prefix.length);
